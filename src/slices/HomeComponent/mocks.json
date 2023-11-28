@@ -1,0 +1,79 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrowText": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Period"
+						}
+					}
+				]
+			},
+			"eyebrowTextColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#425cae",
+				"type": "Color"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Ranch"
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#1a507a",
+				"type": "Color"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deserunt veniam esse in ut elit sunt laboris tempor adipisicing consequat excepteur cupidatat pariatur proident laboris."
+						}
+					}
+				]
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#e4ad38",
+				"type": "Color"
+			},
+			"ctaLabel": {
+				"__TYPE__": "FieldContent",
+				"value": "whatever",
+				"type": "Text"
+			},
+			"ctaLink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#430a64",
+				"type": "Color"
+			},
+			"videoUrl": {
+				"__TYPE__": "FieldContent",
+				"value": "factor",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,65 @@
+{
+  "id": "blogs_section",
+  "type": "SharedSlice",
+  "name": "BlogsSection",
+  "description": "BlogsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "titleColor": {
+          "type": "Color",
+          "config": {
+            "label": "Title Color",
+            "placeholder": ""
+          }
+        },
+        "textAlignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ]
+          }
+        },
+        "language": {
+          "type": "Select",
+          "config": {
+            "label": "Language",
+            "placeholder": "",
+            "options": [
+              "English",
+              "Spanish"
+            ]
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

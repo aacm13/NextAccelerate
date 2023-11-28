@@ -1,0 +1,115 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Habit"
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#5a2f0c",
+				"type": "Color"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Incididunt laboris pariatur mollit enim. Ex ex magna deserunt aute ipsum."
+						}
+					}
+				]
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#93594d",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#793058",
+				"type": "Color"
+			},
+			"textAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "right",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "fact",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Aute irure mollit cupidatat ipsum aute adipisicing sunt officia reprehenderit irure elit cillum do dolor. Fugiat eu ut mollit non cupidatat mollit pariatur quis deserunt."
+									}
+								}
+							]
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+								"width": 6000,
+								"height": 4000
+							},
+							"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+							"width": 6000,
+							"height": 4000,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

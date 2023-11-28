@@ -1,0 +1,61 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location",
+          "placeholder": ""
+        }
+      },
+      "hashtag": {
+        "type": "Text",
+        "config": {
+          "label": "Hashtag",
+          "placeholder": ""
+        }
+      },
+      "rights": {
+        "type": "Text",
+        "config": {
+          "label": "Rights",
+          "placeholder": ""
+        }
+      },
+      "ctaLink": {
+        "type": "Link",
+        "config": {
+          "label": "CTA Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "ctaLabel": {
+        "type": "Text",
+        "config": {
+          "label": "CTA Label",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

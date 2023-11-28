@@ -1,0 +1,94 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrowText": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Expect"
+						}
+					}
+				]
+			},
+			"eyebrowTextColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#05d4f3",
+				"type": "Color"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Steep"
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#5dda46",
+				"type": "Color"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "In adipisicing laborum minim aliquip laboris sunt reprehenderit ex proident exercitation officia et cillum. Ullamco irure aliqua consequat."
+						}
+					}
+				]
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#fbbcfa",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#9f9788",
+				"type": "Color"
+			},
+			"backgroundImage": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"overlay": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"halo": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"ctaLink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"ctaLabel": {
+				"__TYPE__": "FieldContent",
+				"value": "hair",
+				"type": "Text"
+			},
+			"textAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "left",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

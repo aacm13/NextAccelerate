@@ -1,0 +1,67 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat est et officia sit. Eiusmod tempor aliqua aute deserunt dolor in nostrud in nulla id sit labore."
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#89e8e2",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#1c1729",
+				"type": "Color"
+			},
+			"textAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "left",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"logo",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+								"width": 3882,
+								"height": 2584
+							},
+							"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+							"width": 3882,
+							"height": 2584,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]

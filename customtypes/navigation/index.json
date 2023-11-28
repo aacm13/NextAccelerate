@@ -1,0 +1,76 @@
+{
+  "id": "navigation",
+  "label": "Navigation",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "homeLink": {
+        "type": "Link",
+        "config": {
+          "label": "Home Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "label": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Label",
+                "placeholder": "Optional - Label for the link",
+                "allowTargetBlank": false,
+                "single": "heading3"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Link for navigation item",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "socialMedia": {
+        "type": "Group",
+        "config": {
+          "label": "Social Media",
+          "fields": {
+            "icon": {
+              "type": "Select",
+              "config": {
+                "label": "icon",
+                "placeholder": "",
+                "options": ["Instagram", "Twitter", "Facebook", "Linkedin"]
+              }
+            },
+            "socialMediaLink": {
+              "type": "Link",
+              "config": {
+                "label": "Social media link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

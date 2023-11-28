@@ -1,0 +1,114 @@
+{
+  "id": "page",
+  "label": "Page",
+  "format": "page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": "URL slug for the page"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "header": {
+        "type": "Select",
+        "config": {
+          "label": "Header",
+          "placeholder": "",
+          "options": ["black", "white"]
+        }
+      },
+      "pageLoader": {
+        "type": "Boolean",
+        "config": {
+          "label": "Page Loader",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "header_section": {
+              "type": "SharedSlice"
+            },
+            "content": {
+              "type": "SharedSlice"
+            },
+            "team_section": {
+              "type": "SharedSlice"
+            },
+            "cards_section": {
+              "type": "SharedSlice"
+            },
+            "brand_section": {
+              "type": "SharedSlice"
+            },
+            "frequently_asked_questions": {
+              "type": "SharedSlice"
+            },
+            "news_section": {
+              "type": "SharedSlice"
+            },
+            "contact_form": {
+              "type": "SharedSlice"
+            },
+            "blogs_section": {
+              "type": "SharedSlice"
+            },
+            "home_component": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Meta Image",
+          "constraint": {
+            "width": 2400,
+            "height": 1260
+          },
+          "thumbnails": []
+        }
+      },
+      "keywords": {
+        "type": "Text",
+        "config": {
+          "label": "keywords",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

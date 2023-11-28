@@ -1,0 +1,157 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "ContactForm",
+  "description": "ContactForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "titleColor": {
+          "type": "Color",
+          "config": {
+            "label": "Title Color",
+            "placeholder": ""
+          }
+        },
+        "firstNamePlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "First Name Placeholder",
+            "placeholder": ""
+          }
+        },
+        "lastNamePlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "Last Name Placeholder",
+            "placeholder": ""
+          }
+        },
+        "emailPlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "Email Placeholder",
+            "placeholder": ""
+          }
+        },
+        "servicePlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "Service Placeholder",
+            "placeholder": ""
+          }
+        },
+        "companyPlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "Company Placeholder",
+            "placeholder": ""
+          }
+        },
+        "discountPlaceholder": {
+          "type": "Text",
+          "config": {
+            "label": "Discount Placeholder",
+            "placeholder": ""
+          }
+        },
+        "subscribeToNewsText": {
+          "type": "Text",
+          "config": {
+            "label": "Subscribe to news text",
+            "placeholder": ""
+          }
+        },
+        "ourEmail": {
+          "type": "Text",
+          "config": {
+            "label": "Our Email",
+            "placeholder": ""
+          }
+        },
+        "acceptTermsText": {
+          "type": "Text",
+          "config": {
+            "label": "Accept Terms Text",
+            "placeholder": ""
+          }
+        },
+        "termsAndConditionsLabel": {
+          "type": "Text",
+          "config": {
+            "label": "Terms and conditions label",
+            "placeholder": ""
+          }
+        },
+        "termsAndConditionsLink": {
+          "type": "Link",
+          "config": {
+            "label": "Terms and conditions link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "sendText": {
+          "type": "Text",
+          "config": {
+            "label": "Send Text",
+            "placeholder": ""
+          }
+        },
+        "formContainerColor": {
+          "type": "Color",
+          "config": {
+            "label": "Form Container Color",
+            "placeholder": ""
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "socialMedia": {
+          "type": "Select",
+          "config": {
+            "label": "Social Media",
+            "placeholder": "",
+            "options": [
+              "facebook",
+              "instagram",
+              "linkedin",
+              "twitter"
+            ]
+          }
+        },
+        "socialMediaLink": {
+          "type": "Link",
+          "config": {
+            "label": "Social media link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

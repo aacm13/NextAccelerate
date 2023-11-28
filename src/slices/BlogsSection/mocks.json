@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"language": {
+				"__TYPE__": "FieldContent",
+				"value": "Spanish",
+				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Seldom"
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#70d7c2",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#45abf5",
+				"type": "Color"
+			},
+			"textAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "left",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

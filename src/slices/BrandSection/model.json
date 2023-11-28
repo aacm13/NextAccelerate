@@ -1,0 +1,63 @@
+{
+  "id": "brand_section",
+  "type": "SharedSlice",
+  "name": "BrandSection",
+  "description": "BrandSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em,o-list-item,paragraph"
+          }
+        },
+        "titleColor": {
+          "type": "Color",
+          "config": {
+            "label": "Title Color",
+            "placeholder": ""
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "textAlignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ]
+          }
+        }
+      },
+      "items": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

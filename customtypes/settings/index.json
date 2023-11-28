@@ -1,0 +1,104 @@
+{
+  "id": "settings",
+  "label": "Settings",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "siteTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Site Title",
+          "placeholder": "Title of the site",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "thumbnails": [],
+          "constraint": {
+            "height": 40,
+            "width": 261
+          },
+          "label": "Logo"
+        }
+      },
+      "mobileLogo": {
+        "type": "Image",
+        "config": {
+          "label": "Mobile Logo",
+          "constraint": {
+            "width": 54,
+            "height": 40
+          },
+          "thumbnails": []
+        }
+      },
+      "invertedLogo": {
+        "type": "Image",
+        "config": {
+          "label": "Inverted Logo",
+          "constraint": {
+            "width": 262,
+            "height": 40
+          },
+          "thumbnails": []
+        }
+      },
+      "invertedMobileLogo": {
+        "type": "Image",
+        "config": {
+          "label": "Inverted Mobile Logo",
+          "constraint": {
+            "width": 54,
+            "height": 40
+          },
+          "thumbnails": []
+        }
+      },
+      "headerlinks": {
+        "type": "Group",
+        "config": {
+          "label": "HeaderLinks",
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "icon": {
+              "type": "Select",
+              "config": {
+                "label": "Icon",
+                "placeholder": "",
+                "options": ["location", "phone", "message"]
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "cursorTrail": {
+        "type": "Boolean",
+        "config": {
+          "label": "Cursor Trail",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      }
+    }
+  }
+}

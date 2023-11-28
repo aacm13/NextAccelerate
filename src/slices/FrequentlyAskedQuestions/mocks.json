@@ -1,0 +1,63 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem incididunt magna labore consectetur quis eiusmod. Id dolore dolor aliquip nostrud id ipsum occaecat laboris sit non officia veniam irure cillum."
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#37e8c6",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#3ff5d0",
+				"type": "Color"
+			},
+			"textAlignment": {
+				"__TYPE__": "FieldContent",
+				"value": "left",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "managed",
+							"type": "Text"
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Esse ex anim laboris consectetur veniam nisi commodo aliqua minim velit est exercitation non pariatur."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

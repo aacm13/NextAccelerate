@@ -1,0 +1,97 @@
+{
+  "id": "home_component",
+  "type": "SharedSlice",
+  "name": "HomeComponent",
+  "description": "HomeComponent",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "eyebrowText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Eyebrow Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "eyebrowTextColor": {
+          "type": "Color",
+          "config": {
+            "label": "Eyebrow Text Color",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "labels": ["accent-blue", "accent-cyan", "accent-magenta"],
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "titleColor": {
+          "type": "Color",
+          "config": {
+            "label": "Title Color",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,o-list-item,list-item"
+          }
+        },
+        "descriptionColor": {
+          "type": "Color",
+          "config": {
+            "label": "Description Color",
+            "placeholder": ""
+          }
+        },
+        "ctaLabel": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          }
+        },
+        "ctaLink": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "videoUrl": {
+          "type": "Text",
+          "config": {
+            "label": "Video Url",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

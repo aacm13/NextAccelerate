@@ -1,0 +1,121 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Further"
+						}
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#a9cc58",
+				"type": "Color"
+			},
+			"firstNamePlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "wait",
+				"type": "Text"
+			},
+			"lastNamePlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "length",
+				"type": "Text"
+			},
+			"emailPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "speed",
+				"type": "Text"
+			},
+			"servicePlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "science",
+				"type": "Text"
+			},
+			"companyPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "poet",
+				"type": "Text"
+			},
+			"discountPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "early",
+				"type": "Text"
+			},
+			"subscribeToNewsText": {
+				"__TYPE__": "FieldContent",
+				"value": "egg",
+				"type": "Text"
+			},
+			"acceptTermsText": {
+				"__TYPE__": "FieldContent",
+				"value": "tail",
+				"type": "Text"
+			},
+			"termsAndConditionsLabel": {
+				"__TYPE__": "FieldContent",
+				"value": "future",
+				"type": "Text"
+			},
+			"termsAndConditionsLink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"sendText": {
+				"__TYPE__": "FieldContent",
+				"value": "job",
+				"type": "Text"
+			},
+			"formContainerColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#937e4a",
+				"type": "Color"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#64f509",
+				"type": "Color"
+			},
+			"ourEmail": {
+				"__TYPE__": "FieldContent",
+				"value": "regular",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"socialMedia",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "facebook",
+							"type": "Select"
+						}
+					],
+					[
+						"socialMediaLink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]
