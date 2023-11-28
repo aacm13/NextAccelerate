@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { useState } from 'react'
 import Reveal from "@/components/animations/Reveal";
+import SentMessage from "./components/SentMessage";
 
 const DefaultContactForm = ({
   title,

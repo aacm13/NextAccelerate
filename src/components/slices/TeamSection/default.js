@@ -20,8 +20,8 @@ const DefaultTeamSection = ({ title, backgroundColor, items }) => {
           {items.map((team, index) => {
             if (team.link.url) {
               return (
-                <Grow>
-                  <PrismicNextLink field={team.link} key={index}>
+                <Grow key={index}>
+                  <PrismicNextLink field={team.link} >
                     <div className={cardCss}>
                       <div>
                         {prismic.isFilled.image(team.image) && (

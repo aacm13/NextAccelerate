@@ -2,6 +2,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import Navgation from "./Navigation"
 import BlogHeading from "./BlogHeading";
+import CursorTrail from "./animations/CursorTrail";
 
 export function BlogLayout({ page, locales, navigation, settings, footer, children }) {
   return (
