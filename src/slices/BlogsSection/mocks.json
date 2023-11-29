@@ -38,6 +38,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "medium",
 				"type": "Select"
+			},
+			"limit": {
+				"__TYPE__": "FieldContent",
+				"value": "59",
+				"type": "Number"
 			}
 		},
 		"items": []

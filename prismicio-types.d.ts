@@ -636,6 +636,16 @@ export interface BlogsSectionSliceDefaultPrimary {
   textAlignment: prismic.SelectField<"left" | "center" | "right">;
 
   /**
+   * limit field in *BlogsSection → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogs_section.primary.limit
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  limit: prismic.NumberField;
+
+  /**
    * Language field in *BlogsSection → Primary*
    *
    * - **Field Type**: Select

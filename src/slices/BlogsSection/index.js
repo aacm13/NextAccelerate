@@ -15,6 +15,7 @@ const BlogsSection = ({ slice }) => {
         title={slice.primary.title}
         titleColor={slice.primary.titleColor}
         textAlignment={slice.primary.textAlignment}
+        limit={slice.primary.limit}
         language={slice.primary.language}
         backgroundColor={slice.primary.backgroundColor}
         gap={slice.primary.gap}

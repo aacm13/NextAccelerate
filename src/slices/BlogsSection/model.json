@@ -40,6 +40,13 @@
             ]
           }
         },
+        "limit": {
+          "type": "Number",
+          "config": {
+            "label": "limit",
+            "placeholder": ""
+          }
+        },
         "language": {
           "type": "Select",
           "config": {

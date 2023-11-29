@@ -7,8 +7,7 @@ import BlogCard from "./components/BlogCard";
 import Reveal from "@/components/animations/Reveal";
 import clsx from "clsx";
 
-const DefaultBlogsSection = ({ title, titleColor, textAlignment, language, backgroundColor, gap }) => {
-
+const DefaultBlogsSection = ({ title, titleColor, textAlignment, limit, language, backgroundColor, gap }) => {
   const client = createClient();
   const [data, setData] = useState([]);
 
@@ -26,8 +25,18 @@ const DefaultBlogsSection = ({ title, titleColor, textAlignment, language, backg
 
       }
       try {
-        const blogs = await client.getAllByType("blog", { lang: lang });
-        setData(blogs);
+        if (limit) {
+          const blogs = await client.getAllByType("blog", {
+            lang: lang,
+            limit: limit,
+          });
+          setData(blogs);
+        } else {
+          const blogs = await client.getAllByType("blog", {
+            lang: lang
+          });
+          setData(blogs);
+        }
       } catch (e) {
         console.error('error: ', e);
       }
