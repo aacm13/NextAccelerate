@@ -21,3 +21,20 @@ export const ContentAligner = ({ align }) => {
     default:
   }
 };
+
+export const ContentGap = (gap) => {
+  switch (gap) {
+    case "tiny":
+      return "py-5";
+    case "small":
+      return "py-10"
+    case "medium":
+      return "py-20"
+    case "large":
+      return "py-lg"
+    case "huge":
+      return "py-32"
+    default:
+      return "py-20";
+  }
+}

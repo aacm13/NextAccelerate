@@ -1,11 +1,12 @@
 import { PrismicRichText } from "@/components/PrismicRichText";
 import Reveal from "@/components/animations/Reveal";
-import { TextAligner } from "@/utils/formatter";
+import { ContentGap, TextAligner } from "@/utils/formatter";
+import clsx from "clsx";
 
-const FullTextContent = ({ title, titleColor, textAlignment, bodyText, bodyTextColor, backgroundColor }) => {
+const FullTextContent = ({ title, titleColor, textAlignment, bodyText, bodyTextColor, backgroundColor, gap }) => {
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="main-container py-24">
+      <div className={clsx("main-container", ContentGap(gap))}>
         <Reveal width="100%">
           <div className={`RichText mb-5 ${TextAligner(textAlignment)}`} style={{ color: `${titleColor}` }}>
             <PrismicRichText field={title} />

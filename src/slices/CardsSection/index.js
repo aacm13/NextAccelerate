@@ -15,6 +15,7 @@ const CardsSection = ({ slice }) => {
         textAlignment={slice.primary.textAlignment}
         titleColor={slice.primary.titleColor}
         backgroundColor={slice.primary.backgroundColor}
+        gap={slice.primary.gap}
         cards={slice.items}
         sliceVariation={slice.variation}
       />

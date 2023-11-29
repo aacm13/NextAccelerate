@@ -17,6 +17,7 @@ const NewsSection = ({ slice }) => {
         descriptionColor={slice.primary.descriptionColor}
         textAlignment={slice.primary.textAlignment}
         backgroundColor={slice.primary.backgroundColor}
+        gap={slice.primary.gap}
         news={slice.items}
       />
     </section>

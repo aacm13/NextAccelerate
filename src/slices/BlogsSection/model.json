@@ -57,6 +57,20 @@
             "label": "Background Color",
             "placeholder": ""
           }
+        },
+        "gap": {
+          "type": "Select",
+          "config": {
+            "label": "Gap",
+            "placeholder": "",
+            "options": [
+              "tiny",
+              "small",
+              "medium",
+              "large",
+              "huge"
+            ]
+          }
         }
       },
       "items": {}

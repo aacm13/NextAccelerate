@@ -1,6 +1,7 @@
 import { PrismicRichText } from "@/components/PrismicRichText";
 import Reveal from "@/components/animations/Reveal";
 import { PrismicNextLink } from "@prismicio/next";
+import clsx from "clsx";
 
 const ContentFull = ({
   title,
@@ -12,12 +13,16 @@ const ContentFull = ({
   ctaLink,
   ctaLabel,
   imageLeft,
+  gap
 }) => {
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
       <div
-        className={`main-container sm:h-[1000px] xl:h-[1000px] xl:h-[700px] flex flex-col ${imageLeft ? "sm:flex-row-reverse" : "sm:flex-row"
-          }`}
+        className={
+          clsx(
+            "main-container sm:h-[1000px] xl:h-[1000px] xl:h-[700px] flex flex-col",
+            imageLeft ? "sm:flex-row-reverse" : "sm:flex-row"
+          )}
       >
         <div className="sm:w-1/2 my-auto pt-5 md:p-5">
 

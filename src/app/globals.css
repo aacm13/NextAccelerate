@@ -30,7 +30,9 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /* cursor: none; */
+}
+.noCursor{
+  cursor:none;
 }
 
 .circle {
@@ -89,15 +91,15 @@ body {
 }
 
 .RichText h2 {
-  @apply text-[1.5rem]  lg:text-[3rem] leading-[3.5rem];
+  @apply text-[1.8rem] leading-10  lg:text-[3rem] lg:leading-[3.5rem];
 }
 
 .RichText h3 {
-  @apply text-[1.29rem] md:text-[1.29rem] lg:text-[2.4rem] leading-10;
+  @apply text-[1.29rem] leading-8 md:text-[1.7rem] lg:text-[2.4rem] lg:leading-10;
 }
 
 .RichText h4 {
-  @apply text-[1rem] md:text-[1rem] lg:text-[2rem] leading-8;
+  @apply text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] leading-8;
 }
 
 .RichText h5 {

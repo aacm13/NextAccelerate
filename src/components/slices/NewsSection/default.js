@@ -1,14 +1,25 @@
-import { TextAligner } from "@/utils/formatter";
+import { ContentGap, TextAligner } from "@/utils/formatter";
 import { PrismicRichText } from "@/components/PrismicRichText";
 import * as prismic from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import Reveal from "@/components/animations/Reveal";
+import clsx from "clsx";
 
-const DefaultNewsSection = ({ title, titleColor, description, descriptionColor, textAlignment, backgroundColor, news }) => {
+const DefaultNewsSection = (
+  {
+    title,
+    titleColor,
+    description,
+    descriptionColor,
+    textAlignment,
+    backgroundColor,
+    gap,
+    news
+  }) => {
 
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="main-container py-24">
+      <div className={clsx("main-container", ContentGap(gap))}>
         <Reveal>
           <div className={`RichText mb-5 ${TextAligner(textAlignment)}`} style={{ color: `${titleColor}` }}>
             <PrismicRichText field={title} />
@@ -18,10 +29,10 @@ const DefaultNewsSection = ({ title, titleColor, description, descriptionColor, 
           </div>
         </Reveal>
         <Reveal width="100%" delay={0.5}>
-          <div className="mt-10 flex flex-row md:flex-wrap justify-between mx-auto">
+          <div className="mt-10 flex flex-col md:flex-row md:flex-wrap justify-between mx-auto">
             {news.map((item, index) => {
               return (
-                <div className="mt-5 sm:w-[350px] border-2" key={index}>
+                <div className="mt-5 md:w-[350px] border-2" key={index}>
                   <div>
                     <PrismicNextLink field={item.link}>
                       {prismic.isFilled.image(item.image) && (

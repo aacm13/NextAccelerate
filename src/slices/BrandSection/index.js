@@ -16,6 +16,7 @@ const BrandSection = ({ slice }) => {
         textAligment={slice.primary.textAlignment}
         backgroundColor={slice.primary.backgroundColor}
         logos={slice.items}
+        gap={slice.primary.gap}
       />
     </section>
   );

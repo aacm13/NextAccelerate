@@ -32,6 +32,7 @@ const Content = ({ slice }) => {
             backgroundColor={slice.primary.backgroundColor}
             ctaLink={slice.primary.ctaLink}
             ctaLabel={slice.primary.ctaLabel}
+            gap={slice.primary.gap}
           />
         </section>
       );
@@ -51,6 +52,7 @@ const Content = ({ slice }) => {
             ctaLink={slice.primary.ctaLink}
             ctaLabel={slice.primary.ctaLabel}
             imageLeft={slice.primary.imageLeft}
+            gap={slice.primary.gap}
           />
         </section>
       );
@@ -63,6 +65,7 @@ const Content = ({ slice }) => {
           bodyText={slice.primary.bodyText}
           bodyTextColor={slice.primary.bodyTextColor}
           backgroundColor={slice.primary.backgroundColor}
+          gap={slice.primary.gap}
         />
       )
     case variation.videoOnTheRight:
@@ -77,6 +80,7 @@ const Content = ({ slice }) => {
           ctaLabel={slice.primary.ctaLabel}
           youtubeVideoId={slice.primary.youtubeVideoId}
           youtubeVideoTitle={slice.primary.youtubeVideoTitle}
+          gap={slice.primary.gap}
         />
       )
     default:

@@ -2,6 +2,8 @@ import { PrismicRichText } from "@/components/PrismicRichText";
 import Reveal from "@/components/animations/Reveal";
 import { PrismicNextLink } from "@prismicio/next";
 import YouTubeLazyLoad from "./components/YoutubeLazyLoad";
+import clsx from "clsx";
+import { ContentGap } from "@/utils/formatter";
 
 const ContentWithVideo = ({
   title,
@@ -13,10 +15,11 @@ const ContentWithVideo = ({
   ctaLabel,
   youtubeVideoId,
   youtubeVideoTitle,
+  gap,
 }) => {
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="py-28 main-container flex flex-col md:flex-row">
+      <div className={clsx("main-container flex flex-col md:flex-row", ContentGap(gap))}>
         <div className="md:w-1/2 lg:w-2/5 flex flex-col justify-center">
           <Reveal>
             <div className="RichText mb-5" style={{ color: `${titleColor}` }}>

@@ -1,20 +1,21 @@
 import { PrismicRichText } from "@/components/PrismicRichText";
-import { TextAligner } from "@/utils/formatter";
+import { ContentGap, TextAligner } from "@/utils/formatter";
 import FlipCard from "./components/FlipCard";
 import PaymentCard from "./components/PaymentCard";
 import Grow from "@/components/animations/Grow";
 import Reveal from "@/components/animations/Reveal";
+import clsx from "clsx";
 
 const variation = {
   default: 'default',
   payment: 'payment'
 }
-const DefaultCardSection = ({ title, textAlignment, titleColor, backgroundColor, cards, sliceVariation }) => {
+const DefaultCardSection = ({ title, textAlignment, titleColor, backgroundColor, cards, sliceVariation, gap }) => {
   switch (sliceVariation) {
     case variation.default:
       return (
         <section style={{ backgroundColor: `${backgroundColor}` }}>
-          <div className="main-container py-24">
+          <div className={clsx("main-container", ContentGap(gap))}>
             <Reveal css="mx-auto">
               <div className={`RichText mb-5 ${TextAligner(textAlignment)}`} style={{ color: `${titleColor}` }}>
                 <PrismicRichText field={title} />
@@ -40,7 +41,7 @@ const DefaultCardSection = ({ title, textAlignment, titleColor, backgroundColor,
     case variation.payment:
       return (
         <section style={{ backgroundColor: `${backgroundColor}` }}>
-          <div className="main-container py-24">
+          <div className={clsx("main-container", ContentGap(gap))}>
             <Reveal css="mx-auto">
               <div className={`RichText mb-5 ${TextAligner(textAlignment)}`} style={{ color: `${titleColor}` }}>
                 <PrismicRichText field={title} />

@@ -100,6 +100,20 @@
             "label": "CTA Label",
             "placeholder": ""
           }
+        },
+        "gap": {
+          "type": "Select",
+          "config": {
+            "label": "Gap",
+            "placeholder": "",
+            "options": [
+              "tiny",
+              "small",
+              "medium",
+              "large",
+              "huge"
+            ]
+          }
         }
       },
       "items": {}
@@ -192,6 +206,20 @@
             "placeholder_true": "true",
             "placeholder_false": "false"
           }
+        },
+        "gap": {
+          "type": "Select",
+          "config": {
+            "label": "Gap",
+            "placeholder": "",
+            "options": [
+              "tiny",
+              "small",
+              "medium",
+              "large",
+              "huge"
+            ]
+          }
         }
       },
       "items": {}
@@ -263,6 +291,20 @@
           "config": {
             "label": "Background Color",
             "placeholder": ""
+          }
+        },
+        "gap": {
+          "type": "Select",
+          "config": {
+            "label": "Gap",
+            "placeholder": "",
+            "options": [
+              "tiny",
+              "small",
+              "medium",
+              "large",
+              "huge"
+            ]
           }
         }
       },
@@ -360,6 +402,20 @@
             "label": "Video Cover Image",
             "constraint": {},
             "thumbnails": []
+          }
+        },
+        "gap": {
+          "type": "Select",
+          "config": {
+            "label": "Gap",
+            "placeholder": "",
+            "options": [
+              "tiny",
+              "small",
+              "medium",
+              "large",
+              "huge"
+            ]
           }
         }
       },

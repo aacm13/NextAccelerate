@@ -28,6 +28,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "left",
 				"type": "Select"
+			},
+			"gap": {
+				"__TYPE__": "FieldContent",
+				"value": "medium",
+				"type": "Select"
 			}
 		},
 		"items": [

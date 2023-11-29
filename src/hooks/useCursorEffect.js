@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const useCursorEffect = () => {
   useEffect(() => {
-    document.querySelector("*").style.setProperty('cursor', 'none', 'important');
+    document.querySelector("*").classList.add("noCursor");
     const coords = { x: 0, y: 0 };
     const circles = document.querySelectorAll(".circle");
 

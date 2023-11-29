@@ -17,6 +17,7 @@ const BlogsSection = ({ slice }) => {
         textAlignment={slice.primary.textAlignment}
         language={slice.primary.language}
         backgroundColor={slice.primary.backgroundColor}
+        gap={slice.primary.gap}
       />
     </section>
   );

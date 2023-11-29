@@ -18,6 +18,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "#645c2c",
 				"type": "Color"
+			},
+			"gap": {
+				"__TYPE__": "FieldContent",
+				"value": "large",
+				"type": "Select"
 			}
 		},
 		"items": [

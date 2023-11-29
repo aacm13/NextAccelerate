@@ -1,12 +1,13 @@
 'use client'
-import { TextAligner } from "@/utils/formatter";
+import { ContentGap, TextAligner } from "@/utils/formatter";
 import { PrismicRichText } from "@/components/PrismicRichText";
 import { createClient } from "@/prismicio";
 import { useEffect, useState } from 'react';
 import BlogCard from "./components/BlogCard";
 import Reveal from "@/components/animations/Reveal";
+import clsx from "clsx";
 
-const DefaultBlogsSection = ({ title, titleColor, textAlignment, language, backgroundColor }) => {
+const DefaultBlogsSection = ({ title, titleColor, textAlignment, language, backgroundColor, gap }) => {
 
   const client = createClient();
   const [data, setData] = useState([]);
@@ -35,7 +36,7 @@ const DefaultBlogsSection = ({ title, titleColor, textAlignment, language, backg
   }, [])
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="main-container py-24">
+      <div className={clsx("main-container", ContentGap(gap))}>
         <Reveal width="100%">
           <div className={`RichText mb-10 ${TextAligner(textAlignment)}`} style={{ color: `${titleColor}` }}>
             <PrismicRichText field={title} />

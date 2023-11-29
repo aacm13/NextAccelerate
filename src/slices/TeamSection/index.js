@@ -20,6 +20,7 @@ const TeamSection = ({ slice }) => {
           <DefaultTeamSection
             title={slice.primary.title}
             backgroundColor={slice.primary.backgroundColor}
+            gap={slice.primary.gap}
             items={slice.items}
           />
         </section>

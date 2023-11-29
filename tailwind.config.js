@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        lg: "6rem",
+      },
       fontFamily: {
         base: ["Poppins", "san-serif"],
         bold: ["PoppinsBold", "san-serif"],

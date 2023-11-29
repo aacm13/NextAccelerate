@@ -33,8 +33,8 @@ export function Header({ locales = [], settings, pageHeader = 'black', navigatio
             </>
           )}
         </PrismicNextLink>
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-3 md:gap-x-10">
-          <ul className="flex flex-wrap gap-6 md:gap-10">
+        <nav className="flex items-center gap-x-6 gap-y-3 md:gap-x-10">
+          <ul className="flex gap-6 md:gap-10">
             {settings.data?.headerlinks.map((item, index) => {
               let icon;
               switch (item.icon) {
@@ -62,9 +62,9 @@ export function Header({ locales = [], settings, pageHeader = 'black', navigatio
               )
             })}
           </ul>
-          <div className="flex flex-wrap gap-3">
-            <span aria-hidden={true}>🌐</span>
-            <ul className="flex flex-wrap gap-3">
+          <div className="flex gap-3">
+            <span aria-hidden={true} className="hidden md:inline">🌐</span>
+            <ul className="flex gap-3">
               {locales.map((locale) => (
                 <li key={locale.lang} className="first:font-bold">
                   <PrismicNextLink

@@ -1,22 +1,24 @@
 import { PrismicRichText } from "@/components/PrismicRichText";
 import Grow from "@/components/animations/Grow";
 import Reveal from "@/components/animations/Reveal";
+import { ContentGap } from "@/utils/formatter";
 import * as prismic from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import clsx from "clsx";
 
-const DefaultTeamSection = ({ title, backgroundColor, items }) => {
+const DefaultTeamSection = ({ title, backgroundColor, gap, items }) => {
   const cardCss =
-    "flex flex-col md:w-[350px] mb-10 md:mb-0 md:mr-20 bg-gradient-to-br from-accelerate-magenta  to-accelerate-magentaLight  px-10 py-20 rounded-xl hover:bg-gradient-to-tl";
+    "flex flex-col md:w-[350px] mb-10 lg:mb-0 lg:mr-20 bg-gradient-to-br from-accelerate-magenta  to-accelerate-magentaLight  px-10 py-20 rounded-xl hover:bg-gradient-to-tl";
 
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="py-32 main-container flex flex-col items-center">
+      <div className={clsx("main-container flex flex-col items-center", ContentGap(gap))}>
         <Reveal css={"mx-auto"}>
           <div className="RichText">
             <PrismicRichText field={title} />
           </div>
         </Reveal>
-        <div className="flex flex-col mt-10 md:flex-row">
+        <div className="flex flex-col mt-10 lg:flex-row">
           {items.map((team, index) => {
             if (team.link.url) {
               return (

@@ -1,8 +1,10 @@
 import { PrismicRichText } from "@/components/PrismicRichText";
 import Grow from "@/components/animations/Grow";
 import Reveal from "@/components/animations/Reveal";
+import { ContentGap } from "@/utils/formatter";
 import * as prismic from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import clsx from "clsx";
 
 const DefaultContent = ({
   title,
@@ -15,10 +17,11 @@ const DefaultContent = ({
   backgroundColor,
   ctaLink,
   ctaLabel,
+  gap
 }) => {
   return (
     <section style={{ backgroundColor: `${backgroundColor}` }}>
-      <div className="py-28 main-container flex flex-col md:flex-row">
+      <div className={clsx("main-container flex flex-col md:flex-row", ContentGap(gap))}>
         <div className="md:w-1/2 lg:w-2/5 flex flex-col justify-center">
           <Reveal>
             <div className="RichText mb-5" style={{ color: `${titleColor}` }}>
@@ -30,7 +33,7 @@ const DefaultContent = ({
               <PrismicRichText field={description} />
             </div>
           </Reveal>
-          <Reveal delay={1} css={"py-3"}>
+          <Reveal delay={1} css={"py-3 mb-5"}>
             {ctaLabel && ctaLink &&
               <div>
                 <PrismicNextLink field={ctaLink} className="px-5 bg-accelerate-cyan text-black text-xl rounded-full font-bold py-3">
