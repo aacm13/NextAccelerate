@@ -6,7 +6,6 @@ import clsx from "clsx";
 import Head from "next/head";
 
 import { repositoryName } from "@/prismicio";
-export const revalidate = 15
 
 const inter = Inter({
   subsets: ["latin"],
