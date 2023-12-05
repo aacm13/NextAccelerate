@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { revalidateTag } from "next/cache";
 
 export async function POST(request) {
+  console.log(request);
   const { secret } = await request.json();
   const tag = request.headers.get('tag');
 
