@@ -2,11 +2,11 @@ import { SliceZone } from "@prismicio/react";
 
 import { getLocales } from "@/lib/getLocales";
 import { createClient } from "@/prismicio";
-import { asText, asImageSrc } from "@prismicio/helpers";
-import Head from 'next/head'
+import { asImageSrc } from "@prismicio/helpers";
 
 import { Layout } from "@/components/Layout";
 import { components } from "@/slices";
+import StructuredData from "@/utils/StructuredData";
 
 /**
  * @returns {Promise<import("next").Metadata>}
@@ -52,6 +52,7 @@ export default async function Page({ params: { lang } }) {
 
   return (
     <Layout locales={locales} navigation={navigation} settings={settings} footer={footer} page={page}>
+      <StructuredData data={structuredData} />
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>
   );
