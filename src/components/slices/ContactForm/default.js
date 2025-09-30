@@ -7,6 +7,7 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/fre
 import { useState } from 'react'
 import Reveal from "@/components/animations/Reveal";
 import SentMessage from "./components/SentMessage";
+import emailjs from '@emailjs/browser';
 
 const DefaultContactForm = ({
   title,
@@ -18,7 +19,7 @@ const DefaultContactForm = ({
   companyPlaceholder,
   discountPlaceholder,
   subscribeToNewsText,
-  ourEmail = "contact@accelerate.io",
+  ourEmail = "contact@acceleratesv.io",
   acceptTermsText,
   termsAndConditionsLabel,
   termsAndConditionsLink,
@@ -93,7 +94,7 @@ const DefaultContactForm = ({
 
   const validateForm = () => {
     if (firstName.length === 0) {
-      setMsg(`${t("contact.firstNameInvalid")}`);
+      setMsg('First name is invalid');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -101,7 +102,7 @@ const DefaultContactForm = ({
       return;
     }
     if (lastName.length === 0) {
-      setMsg(`${t("contact.lastNameInvalid")}`);
+      setMsg('Last name is invalid');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -109,7 +110,7 @@ const DefaultContactForm = ({
       return;
     }
     if (email.length === 0) {
-      setMsg(`${t("contact.emailInvaid")}`);
+      setMsg('Email is invalid');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -117,7 +118,7 @@ const DefaultContactForm = ({
       return;
     }
     if (service.length === 0) {
-      setMsg(`${t("contact.serviceInvalid")}`);
+      setMsg('Service is invalid');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -125,7 +126,7 @@ const DefaultContactForm = ({
       return;
     }
     if (company.length === 0) {
-      setMsg(`${t("contact.companyInvalid")}`);
+      setMsg('Company is invalid');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -133,7 +134,7 @@ const DefaultContactForm = ({
       return;
     }
     if (!terms) {
-      setMsg(`${t("contact.termsInvalid")}`);
+      setMsg('Please check terms of service');
       setError(true);
       setTimeout(() => {
         setError(false);
@@ -166,14 +167,14 @@ const DefaultContactForm = ({
       setNews(false);
       setTerms(false);
       setDisabled(false);
-      setMsg(`${t("contact.msgSent")}`);
+      setMsg('Message sent succesfully!');
       setSuccess(true);
       setTimeout(() => {
         setSuccess(false);
       }, 3500);
       return;
     }
-    setMsg(`${t("contact.msgErr")}`);
+    setMsg('There was an error, check form');
     setError(true);
     setTimeout(() => {
       setError(false);

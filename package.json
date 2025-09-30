@@ -4,6 +4,9 @@
   "private": true,
   "license": "Apache-2.0",
   "author": "Prismic <contact@prismic.io> (https://prismic.io)",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "concurrently \"npm:next:dev\" \"npm:slicemachine\" --names \"next,slicemachine\" --prefix-colors blue,magenta",
     "next:dev": "next",
@@ -14,6 +17,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
